@@ -1,0 +1,87 @@
+.tape {
+        width: 100%;
+	    height: 360px; 
+        background-image: url("assets/images/panel.png");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        font-size: 90pt;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 400px;
+        color: #dcdcdc;
+        font-family: Britannic;
+        text-shadow: black -6px 2px 2px;
+        box-shadow: inset 0 0 10px #000000;
+}
+body {
+	margin: 0;
+}
+.butts {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e2e2e2;
+    margin:100px;
+	button {
+	margin-bottom: 75px;
+	border: none;
+    font-family: Facon;
+    font-size: 30px;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #5fa2d6;
+    color: #fff;
+    box-shadow: 0 6px #1c4f96;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+	}
+}
+.prev {
+    margin-top: 25px;
+	text-align: center;
+	height: 360px;
+	h1 {
+	font-family: Franklin Gothic Heavy;
+	font-style: italic;
+	color: #69877a;
+	font-size: 40pt;
+	}
+}
+.opts {
+height: 720px;
+margin-top: 100px;
+text-align: center;
+	h1 {
+	font-family: Arial;
+	font-style: bold;
+	}
+}
+#topLayer{
+   text-align: right;
+   position:absolute;
+   top:0;
+   left:0;
+   width: 450px;
+   height: 600px;
+   background:transparent url("assets/images/CAT.png") no-repeat;
+   background-position: right;
+   background-size: 450px 600px;
+   z-index:9999;
+   float: right;
+   margin-left: 900px;
+}
+#topLayer:hover{
+   opacity:0.5;
+}
