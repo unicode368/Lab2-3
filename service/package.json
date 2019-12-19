@@ -12,22 +12,21 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
-    "@angular/common": "~8.2.14",
+    "@angular/common": "~8.0.0",
     "@angular/compiler": "~8.2.14",
     "@angular/core": "~8.2.14",
     "@angular/forms": "~8.2.14",
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.18.2",
     "express": "^4.17.1",
     "method-override": "~2.1.2",
     "mongoose": "~3.6.2",
     "morgan": "^1.9.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1",
-    "body-parser": "^1.18.2"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.20",
