@@ -47,6 +47,30 @@ router.post('/login', (req, res) => {
 			}
 		}
 	})
-})
+});
+
+router.get('/events', (req, res) => {
+	let events = [
+	{
+		"_id": "1",
+		"name": "login",
+		"description": "these",
+		"date": "2019-12-21"
+	}
+	]
+	res.json(events);
+});
+
+router.get('/special', (req, res) => {
+	let events = [
+	{
+		"_id": "1",
+		"name": "login",
+		"description": "these",
+		"date": "2019-12-21"
+	}
+	]
+	res.json(events);
+});
 
 module.exports = router;
