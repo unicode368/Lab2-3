@@ -7,8 +7,28 @@
       <li class="menu__group"><a routerLink="/order_meme" routerLinkActive="active" class="menu__link">Order a meme</a></li>
       <li class="menu__group"><a routerLink="/chat" routerLinkActive="active" class="menu__link"><span style="color: red">NEW!!!</span>Chat</a></li>
       <li class="menu__group"><a routerLink="/home" routerLinkActive="active" class="menu__link">Home</a></li>
-      <li class="menu__group"><div class="button_cont" align="center"><a class="example_c" routerLink="/register" routerLinkActive="active" rel="nofollow noopener">Sign In</a></div></li>
+      <li class="menu__group"><div class="button_cont" align="center"><a class="example_c" routerLink="/register" routerLinkActive="active" rel="nofollow noopener">Sign Up</a></div></li>
       <li class="menu__group"><div class="button_cont" align="center"><a class="example_c" routerLink="/login" routerLinkActive="active" rel="nofollow noopener">Log In</a></div></li>
     </ul>
   </nav>
+  <form action="#" method="post">
+  <h2>Sign Up</h2>
+    <p>
+      <label for="Email" class="floatLabel">Email</label>
+      <input id="Email" name="Email" type="text">
+    </p>
+    <p>
+      <label for="password" class="floatLabel">Password</label>
+      <input id="password" name="password" type="password">
+      <span>Enter a password longer than 8 characters</span>
+    </p>
+    <p>
+      <label for="confirm_password" class="floatLabel">Confirm Password</label>
+      <input id="confirm_password" name="confirm_password" type="password">
+      <span>Your passwords do not match</span>
+    </p>
+    <p>
+      <input type="submit" value="Create My Account" id="submit">
+    </p>
+  </form>
 </div>
