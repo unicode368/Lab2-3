@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 var port = process.env.PORT || 3000;
 const api = require('./routes/api')
@@ -11,6 +12,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(methodOverride('X-HTTP-Method-Override'));
 app.use('/api', api);
+app.use(cors());
 
 app.get('/', function(req, res) {
 	res.send('SOBAKA');
