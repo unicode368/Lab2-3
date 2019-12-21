@@ -181,3 +181,23 @@ background: #f6b93b;
 border-color: #f6b93b !important;
 transition: all 0.4s ease 0s;
 }
+
+.page {
+   background: url('../../assets/images/123.jpg');
+   h1 {
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 10px;
+      font-size: 100pt;
+      font-family: Pristina;
+   }
+}
+
+.info {
+    background-color: rgba(255,255,255,.8);
+    width: 50%;
+    text-align: center;
+    border: 1px solid;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}

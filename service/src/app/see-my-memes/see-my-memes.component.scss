@@ -181,3 +181,51 @@ background: #f6b93b;
 border-color: #f6b93b !important;
 transition: all 0.4s ease 0s;
 }
+
+.page {
+   background: url('../../assets/images/0.n.png');
+}
+
+.d11 {
+  display: flex;
+  idth: 50%;
+  text-align: center;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 75px;
+  .d1 {
+    background-color: rgba(255,255,255,.8);
+    width: 300px;
+    height: 300px;
+    margin-right: 75px;
+  }
+  .d2 {
+    background-color: rgba(255,255,255,.8);
+    width: 300px;
+    height: 300px;
+    margin-left: 75px;
+  }
+}
+
+.d22 {
+  display: flex;
+  idth: 50%;
+  text-align: center;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 75px;
+  .d3 {
+    background-color: rgba(255,255,255,.8);
+    width: 300px;
+    height: 300px;
+    margin-right: 75px;
+  }
+  .d4 {
+    background-color: rgba(255,255,255,.8);
+    width: 300px;
+    height: 300px;
+    margin-left: 75px;
+  }
+}
