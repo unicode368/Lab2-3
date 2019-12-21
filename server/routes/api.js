@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 	res.send('From API route')
 });
 
-router.post('/register', (res, req) => {
+router.post('/register', (req, res) => {
 	let userData = req.body;
 	let user = new User(userData);
 	user.save((error, registeredUser) => {
