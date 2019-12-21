@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EventsComponent } from './events.component';
+import { SeeMyMemesComponent } from './see-my-memes.component';
 
-describe('EventsComponent', () => {
-  let component: EventsComponent;
-  let fixture: ComponentFixture<EventsComponent>;
+describe('SeeMyMemesComponent', () => {
+  let component: SeeMyMemesComponent;
+  let fixture: ComponentFixture<SeeMyMemesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EventsComponent ]
+      declarations: [ SeeMyMemesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EventsComponent);
+    fixture = TestBed.createComponent(SeeMyMemesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

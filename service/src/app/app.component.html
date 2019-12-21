@@ -6,6 +6,44 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<head>
+  <meta charset="utf-8">
+  <title>Service</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<div id="topLayer"></div>
+  <div class="tape">WELCOME!)))</div>
 
-<base href="/">
+  <div class="prev">
+  	<h1>Before starting:</h1>
+  	<div class="butts">
+  		<button id="but1" routerLink="/login" routerLinkActive="active">Login</button>
+  		<button id="but2" routerLink="/register" routerLinkActive="active">Sign in</button>
+  	</div>
+  </div>
+  <div class="opts">
+  	<h1>Things you can do:</h1>
+  	<div class="other_butts">
+  		<div class="obutts1"><button><img src="./assets/images/book-png-book-stack-png-image-25686-1024.png">My Story</button>
+  		<button><img src="./assets/images/4-2-blogging-picture.png"><a routerLink="/blog" routerLinkActive="active">Blog</a></button>
+  		<div class="obutts2">
+  			<button><img src="./assets/images/photo_2019-10-15_15-13-57.jpg">
+  			<a routerLink="/order_meme" routerLinkActive="active">Order a Meme</a></button>
+  			<button><img src="./assets/images/lezhacha_tyotya_lora.png"><a routerLink="/my_memes" routerLinkActive="active">See my memes</a></button></div>
+  		</div>
+  		<div class="obutts3">
+  			<button><img src="./assets/images/chat.png"><a routerLink="/my_memes" routerLinkActive="active">NEW!1!
+  			Chat</a></button>
+  		</div>
+  	</div>
+  </div>
+
 (c) Loren The Cat
+<nav>
+	<a routerLink="/login" routerLinkActive="active">1</a>
+	<a routerLink="/register" routerLinkActive="active">2</a>
+</nav>
+ <router-outlet></router-outlet>

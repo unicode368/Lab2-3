@@ -3,20 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainPGComponent } from './main-pg/main-pg.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { EventsComponent } from './events/events.component';
-import { SpecialEventsComponent } from './special-events/special-events.component';
+import { MyStoryComponent } from './my-story/my-story.component';
+import { BlogComponent } from './blog/blog.component';
+import { OrderMemeComponent } from './order-a-meme/order-a-meme.component';
+import { SeeMyMemesComponent } from './see-my-memes/see-my-memes.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainPGComponent,
     RegisterComponent,
     LoginComponent,
-    EventsComponent,
-    SpecialEventsComponent
+    MyStoryComponent,
+    BlogComponent,
+    OrderMemeComponent,
+    SeeMyMemesComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
