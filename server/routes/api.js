@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
 const mongoose = require('mongoose');
-const db = "mongodb+srv://sobaka:sobaka8@cluster0-pz4pq.gcp.mongodb.net/test?retryWrites=true&w=majority";
+const db = "mongodb+srv://nesobaka:nesobaka8@cluster0-pz4pq.gcp.mongodb.net/test?retryWrites=true&w=majority";
 
 console.log('akajajaja');
 
