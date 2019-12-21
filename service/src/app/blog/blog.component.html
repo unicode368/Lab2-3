@@ -1,28 +1,15 @@
-<div id="topLayer"></div>
-  <div class="tape">WELCOME!)))</div>
-  <div class="prev">
-  	<h1>Before starting:</h1>
-  	<div class="butts">
-  		<button id="but1" routerLink="/login" routerLinkActive="active">Login</button>
-  		<button id="but2" routerLink="/register" routerLinkActive="active">Sign in</button>
-  	</div>
-  </div>
-  <div class="opts">
-  	<h1>Things you can do:</h1>
-  	<div class="other_butts">
-  		<div class="obutts1">
-  			<button routerLink="/story" routerLinkActive="active"><img src="./assets/images/book-png-book-stack-png-image-25686-1024.png">My Story</button>
-  		<button routerLink="/blog" routerLinkActive="active"><img src="./assets/images/4-2-blogging-picture.png">Blog</button>
-  		<div class="obutts2">
-  			<button routerLink="/order_meme" routerLinkActive="active"><img src="./assets/images/photo_2019-10-15_15-13-57.jpg">
-  			Order a Meme</button>
-  			<button routerLink="/my_memes" routerLinkActive="active"><img src="./assets/images/lezhacha_tyotya_lora.png">See my memes</button></div>
-  		</div>
-  		<div class="obutts3">
-  			<button routerLink="/chat" routerLinkActive="active"><img src="./assets/images/chat.png">NEW!1!
-  			Chat</button>
-  		</div>
-  	</div>
-  </div>
-(c) Loren The Cat
- <router-outlet></router-outlet>
+<div class="page">
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__group"><a class="menu__link" routerLink="/story" routerLinkActive="active">My story</a></li>
+      <li class="menu__group"><a class="menu__link" routerLink="/my_memes" routerLinkActive="active">My memes</a></li>
+      <li class="menu__group"><a href="#0" class="menu__link">Order a meme</a></li>
+      <li class="menu__group"><a href="#0" class="menu__link"><span style="color: red">NEW!!!</span>Chat</a></li>
+      <li class="menu__group"><a href="#0" class="menu__link">Home</a></li>
+      <li class="menu__group"><button>Sign in</button></li>
+      <li class="menu__group"><button>Log in</button></li>
+    </ul>
+  </nav>
+</div>
+
+

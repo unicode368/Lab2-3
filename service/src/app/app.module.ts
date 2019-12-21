@@ -10,6 +10,7 @@ import { BlogComponent } from './blog/blog.component';
 import { OrderMemeComponent } from './order-a-meme/order-a-meme.component';
 import { SeeMyMemesComponent } from './see-my-memes/see-my-memes.component';
 import { ChatComponent } from './chat/chat.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ChatComponent } from './chat/chat.component';
     BlogComponent,
     OrderMemeComponent,
     SeeMyMemesComponent,
-    ChatComponent
+    ChatComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
