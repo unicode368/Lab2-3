@@ -12,17 +12,23 @@
     </ul>
   </nav>
 <div class="container">
-	<div class="news">
-	<div class="heading">Lorem</div>
-	<div>ipsum dolor.</div>
+	<div class="news" *ngFor="let post of posts">
+	<div class="heading">{{ post.title }}</div>
+	<div>{{ post.content }}</div>
 	<div class="buttons">
 		<div><img src="../../assets/images/delete-sign--v2.png" class="but"></div>
-		<div><img src="../../assets/images/how-to-edit-png-images.png" class="but"></div>
-		<div ><img src="../../assets/images/1.png" class="like"></div>
+		<div ><img src="../../assets/images/how-to-edit-png-images.png" class="but"></div>
+		<div ><img src="../../assets/images/1.png" class="like" (click)="changeColor()"></div>
 	</div>
 </div>
 </div>
-<div class="addNew"><button class="btn btn-blow"><span class="">Новий пост!</span></button></div>
+<div class="addNew" (click)="onAddPost()"><button class="btn btn-blow"><span class="">Новий пост!</span></button></div>
+<div class="container">
+	<div class="container__item">
+		<form class="form">
+			<input type="email" class="form__field" placeholder="Title" *ngIf="SABAKA" />
+		</form>
+	</div>
 </div>
 
 
