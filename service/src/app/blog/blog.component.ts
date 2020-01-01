@@ -23,6 +23,10 @@ export class BlogComponent implements OnInit {
 
   }
 
+  post() {
+  
+  }
+
   ngOnInit() {
   }
 

@@ -382,5 +382,48 @@ a {
     border: 0;
     outline: 0;
     padding: 22px 18px;
+    margin-top: 20px;
+  }
+  .field {
+    height: 360px;
   }
 }
+
+.button-two {
+    border-radius: 4px;
+    background-color: #d35400;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 0 0 100px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.button-two span::after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    width: 10px;
+    height: 10px;
+}
+
+.button-two span:hover::after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    width: 10px;
+    height: 10px;
+}
+
+

@@ -23,12 +23,14 @@
 </div>
 </div>
 <div class="addNew" (click)="onAddPost()"><button class="btn btn-blow"><span class="">Новий пост!</span></button></div>
-<div class="container">
+<div class="container" *ngIf="SABAKA">
 	<div class="container__item">
-		<form class="form">
-			<input type="email" class="form__field" placeholder="Title" *ngIf="SABAKA" />
+		<form class="form" name="postData">
+			<input type="email" class="form__field" placeholder="Title" [(ngModel)]="postData.name" />
 		</form>
+		<textarea class="form__field field" placeholder="Description"  [(ngModel)]="postData.content"></textarea>
 	</div>
+	<button class="button-two" type="submit" (click)="post()"><span>Hover Me</span></button>
 </div>
 
 

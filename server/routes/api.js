@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
+const post = require('../models/post');
 const mongoose = require('mongoose');
 const db = "mongodb+srv://nesobaka:nesobaka8@cluster0-pz4pq.gcp.mongodb.net/test?retryWrites=true&w=majority";
 
@@ -16,6 +17,10 @@ mongoose.connect(db, err => {
 
 router.get('/', (req, res) => {
 	res.send('From API route')
+});
+
+router.get('/my_memes', (req, res) => {
+	res.send('ok')
 });
 
 router.post('/register', (req, res) => {
@@ -45,6 +50,17 @@ router.post('/login', (req, res) => {
 					res.status(200).send(user);
 				}
 			}
+		}
+	})
+});
+
+router.post('/blog', (req, res) => {
+	let postData = req.body;
+	User.findOne({short_desc: postData.short_desc}, (error, user) => {
+		if (error) {
+			console.log(error);
+		} else {
+			console.log("published!");
 		}
 	})
 });

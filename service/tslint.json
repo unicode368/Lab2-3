@@ -3,6 +3,7 @@
   "rules": {
     "array-type": false,
     "arrow-parens": false,
+    "no-unused-css": true, 
     "deprecation": {
       "severity": "warning"
     },
