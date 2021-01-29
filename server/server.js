@@ -27,15 +27,17 @@ app.get('/', function(req, res) {
 
 app.post('/login', async (req, res) => {
     try {
-        let user = await pool.query("SELECT * FROM users WHERE ",
-			[username, password]
+    	const {login, password} = req.body;
+        let user = await pool.query("SELECT * FROM users WHERE login=$1 AND password=$2",
+			[login, password]
 			);
+        console.log(user.rows[0]);
         if(user !== null) {
             req.session.user = {
-                  email: user.email,
-                  name: user.name
+                  login: user.login,
+                  password: user.password
             };
-            res.json(user);
+            res.json(user.rows[0]);
         } else {
            // Login error
         }
