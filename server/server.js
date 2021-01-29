@@ -13,6 +13,7 @@ app.use(cors({
 	origin: "http://localhost:4200",
 	credentials: true
 }));
+
 app.use(session({
     secret: 'secret token',
     resave: false,
@@ -31,13 +32,13 @@ app.post('/login', async (req, res) => {
         let user = await pool.query("SELECT * FROM users WHERE login=$1 AND password=$2",
 			[login, password]
 			);
-        console.log(user.rows[0]);
         if(user !== null) {
             req.session.user = {
-                  login: user.login,
-                  password: user.password
+                  login: user.rows[0].login,
+                  password: user.rows[0].password
             };
-            res.json(user.rows[0]);
+            console.log(req.session);
+            res.json()
         } else {
            // Login error
         }

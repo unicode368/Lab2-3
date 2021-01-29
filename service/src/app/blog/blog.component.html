@@ -1,16 +1,4 @@
 <div class="page">
-  <nav class="menu">
-    <ul class="menu__list">
-      <li class="menu__group"><a class="menu__link" routerLink="/story" routerLinkActive="active">My story</a></li>
-      <li class="menu__group"><a class="menu__link" routerLink="/blog" routerLinkActive="active">Blog</a></li>
-      <li class="menu__group"><a class="menu__link" routerLink="/my_memes" routerLinkActive="active">My memes</a></li>
-      <li class="menu__group"><a routerLink="/order_meme" routerLinkActive="active" class="menu__link">Order a meme</a></li>
-      <li class="menu__group"><a routerLink="/chat" routerLinkActive="active" class="menu__link"><span style="color: red">NEW!!!</span>Chat</a></li>
-      <li class="menu__group"><a routerLink="/home" routerLinkActive="active" class="menu__link">Home</a></li>
-      <li class="menu__group"><div class="button_cont" align="center"><a class="example_c" routerLink="/register" routerLinkActive="active" rel="nofollow noopener">Sign In</a></div></li>
-      <li class="menu__group"><div class="button_cont" align="center"><a class="example_c" routerLink="/login" routerLinkActive="active" rel="nofollow noopener">Log In</a></div></li>
-    </ul>
-  </nav>
 <div class="container">
 	<div class="news" *ngFor="let post of posts">
 	<div class="heading">{{ post.title }}</div>

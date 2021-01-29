@@ -27,3 +27,9 @@ CREATE TABLE users (
 	password VARCHAR(255) NOT NULL,
 	role VARCHAR(255) CHECK(check_role(role)) NOT NULL
 );
+
+SELECT * FROM users;
+
+ALTER TABLE users ALTER COLUMN role SET DEFAULT 'user';
+
+INSERT INTO users(login, password, role) VALUES('Lora', 'TheCat', 'me');
