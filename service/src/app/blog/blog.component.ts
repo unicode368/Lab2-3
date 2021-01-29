@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  posts = [{title: 'Lorem', content: 'ipsum dolor.'}];
+  posts = [{name: 'Lorem', content: 'ipsum dolor.'}];
 
   newPost = '';
 
@@ -24,7 +24,7 @@ export class BlogComponent implements OnInit {
   }
 
   post() {
-  
+
   }
 
   ngOnInit() {

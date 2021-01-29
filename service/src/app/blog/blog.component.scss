@@ -1,14 +1,14 @@
-/* 
+/*
 =====
-EFFECT FADING OUT FOR SIBLINGS MENU OPTIONS 
+EFFECT FADING OUT FOR SIBLINGS MENU OPTIONS
 =====
 */
 
-.menu:hover .menu__link:not(:hover){
+.menu:hover .menu__link:not(:hover) {
   color: #241c69;
 }
 
-/* 
+/*
 =====
 MENU STYLES
 =====
@@ -16,33 +16,32 @@ MENU STYLES
 
 /* core styles */
 
-.menu__list{
-  display: flex;  
+.menu__list {
+  display: flex;
   text-align: center;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  list-style: none;  
+  list-style: none;
 }
 
-.menu__group{
+.menu__group {
   flex-grow: 1;
 }
 
-.menu__link{
+.menu__link {
   display: block;
 }
 
 /* skin */
 
-.menu{
+.menu {
   background-color: #6c5ce7;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
 }
 
-.menu__link{
+.menu__link {
   padding: 2rem 1.5rem;
-
   font-weight: 700;
   color: #fff;
   text-decoration: none;
@@ -50,46 +49,43 @@ MENU STYLES
 }
 
 /* states */
-.menu__link:focus{
+.menu__link:focus {
   outline: 2px solid #fff;
 }
 
 /* hover animation */
 
-.menu__link{
+.menu__link {
   position: relative;
   overflow: hidden;
-
   will-change: color;
-  transition: color .25s ease-out;  
+  transition: color .25s ease-out;
 }
 
-.menu__link::before, 
-.menu__link::after{
+.menu__link::before,
+.menu__link::after {
   content: "";
   width: 0;
   height: 3px;
   background-color: #fff;
-
   will-change: width;
   transition: width .1s ease-out;
-
   position: absolute;
   bottom: 0;
 }
 
-.menu__link::before{
+.menu__link::before {
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
 }
 
-.menu__link::after{
+.menu__link::after {
   right: 50%;
-  transform: translateX(50%); 
+  transform: translateX(50%);
 }
 
-.menu__link:hover::before, 
-.menu__link:hover::after{
+.menu__link:hover::before,
+.menu__link:hover::after {
   width: 100%;
   transition-duration: .2s;
 }
@@ -100,34 +96,31 @@ DEMO
 =====
 */
 
-@media (min-width: 768px){
-
-  html{
+@media (min-width: 768px) {
+  html {
     font-size: 62.5%;
   }
 }
 
-@media (max-width: 767px){
-
-  html{
+@media (max-width: 767px) {
+  html {
     font-size: 50%;
   }
 }
 
-body{
+body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
   font-size: 1.6rem;
   margin: 0;
   min-height: 100vh;
-  display: flex;  
+  display: flex;
   flex-direction: column;
 }
 
-.page{
+.page {
   box-sizing: border-box;
   max-width: 100%;
-  width: 100%;  
-  
+  width: 100%;
   order: 1;
   margin: auto;
 }
@@ -138,48 +131,47 @@ LinkedIn
 =====
 */
 
-.linkedin{
+.linkedin {
   width: 100%;
   background-color: #f0f0f0;
   text-align: center;
-  
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.linkedin__container{
+.linkedin__container {
   max-width: 1000px;
   padding: 10px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
-.linkedin__text{
+.linkedin__text {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.linkedin__link{
+.linkedin__link {
   color: #ff5c5c;
 }
 
 .example_c {
-color: #494949 !important;
-text-transform: uppercase;
-text-decoration: none;
-background: #ffffff;
-padding: 20px;
-border: 4px solid #494949 !important;
-display: inline-block;
-transition: all 0.4s ease 0s;
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
 }
 
 .example_c:hover {
-color: #ffffff !important;
-background: #f6b93b;
-border-color: #f6b93b !important;
-transition: all 0.4s ease 0s;
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
 }
 
 .news {
@@ -195,12 +187,14 @@ transition: all 0.4s ease 0s;
   padding-left: 60px;
   margin-top: 60px;
   color: white;
+
   .heading {
-  font-family: Extra Cheese Double;
-  padding-top: 30px;
-  font-size: 30pt;
-  margin-bottom: 20px;
+    font-family: Extra Cheese Double;
+    padding-top: 30px;
+    font-size: 30pt;
+    margin-bottom: 20px;
   }
+
   .buttons {
     div {
       display: inline;
@@ -208,19 +202,22 @@ transition: all 0.4s ease 0s;
       float: right;
     }
   }
+
   .like {
-     height: 20px;
-     width: 20px;
-     margin-left: 10px;
-     margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
+
   .but {
     height: 20px;
-     width: 20px;
-     margin-left: 10px;
-     margin-right: 10px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
+
 .addNew {
   text-align: center;
   margin-top: 20px;
@@ -228,13 +225,11 @@ transition: all 0.4s ease 0s;
 
 @import url('https://fonts.googleapis.com/css?family=Coiny');
 
-
 .btn {
   display: inline-block;
-
   color: white;
   background-color: transparent;
-  border: none;  
+  border: none;
   cursor: pointer;
   z-index: 0;
   padding: 0;
@@ -243,7 +238,6 @@ transition: all 0.4s ease 0s;
 .btn:focus {
   outline-color: transparent;
 }
-
 
 /* btn-blow */
 .btn-blow::after {
@@ -264,13 +258,14 @@ transition: all 0.4s ease 0s;
   opacity: 1;
   transform: scale(1);
 }
+
 .btn-blow:focus:hover::after {
   transform: scale(1.2);
 }
 
 .btn-blow {
   width: 50px;
-  height: 100px;  
+  height: 100px;
 }
 
 .btn-blow * {
@@ -281,16 +276,17 @@ transition: all 0.4s ease 0s;
   position: relative;
   overflow: hidden;
   display: flex;
-  left:-50px;
+  left: -50px;
   width: 200px;
   height: 50px;
   justify-content: center;
   align-items: center;
   border-radius: 0;
-  transition: transform .4s, border-radius .4s;  
+  transition: transform .4s, border-radius .4s;
   font-family: 'Coiny', cursive;
   transition-timing-function: cubic-bezier(.5,2.4,.7,.5);
 }
+
 .btn-blow span::before {
   content: "";
   position: absolute;
@@ -304,18 +300,19 @@ transition: all 0.4s ease 0s;
   top: 0;
   left: 0;
   transform: rotate(90deg);
-  z-index: -1;  
+  z-index: -1;
   border-radius: 0;
   transition: all .4s;
-  
 }
+
 .btn-blow:hover span {
   transform: scale(1.3);
-  transition: transform .8s, border-radius .4s;  
-  border-radius: 50%;  
+  transition: transform .8s, border-radius .4s;
+  border-radius: 50%;
 }
+
 .btn-blow:hover span::before {
-  transition: background-size .8s, border-radius .4s; 
+  transition: background-size .8s, border-radius .4s;
   border-radius: 50%;
   background-size: 120% 120%;
 }
@@ -343,6 +340,7 @@ html,
 body,
 .container {
   height: 100%;
+
   input {
     margin-top: 50px;
   }
@@ -350,7 +348,7 @@ body,
 
 a {
   color: inherit;
-  
+
   &:hover {
     color: $button-bg-color;
   }
@@ -362,68 +360,67 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center !important;
-  align: center;
+  text-align: center;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
-
 //** form
-.form { 
+.form {
   align-items: center;
+
   &__field {
     width: 360px;
     background: #fff;
     color: $input-text-color;
     font: inherit;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
     border: 0;
     outline: 0;
     padding: 22px 18px;
     margin-top: 20px;
   }
+
   .field {
     height: 360px;
   }
 }
 
 .button-two {
-    border-radius: 4px;
-    background-color: #d35400;
-    border: none;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    text-align: center;
-    cursor: pointer;
-    font-size: 24px;
-    margin: 0 0 0 100px;
-    color: #fff;
-    margin-top: 20px;
+  border-radius: 4px;
+  background-color: #d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 0 0 100px;
+  color: #fff;
+  margin-top: 20px;
 }
 
 .button-two span::after {
-    content: "»";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-    width: 10px;
-    height: 10px;
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  width: 10px;
+  height: 10px;
 }
 
 .button-two span:hover::after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-    width: 10px;
-    height: 10px;
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  width: 10px;
+  height: 10px;
 }
-
-
